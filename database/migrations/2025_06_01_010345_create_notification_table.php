@@ -19,8 +19,7 @@ return new class extends Migration
             $table->string('message');
             $table->integer('status');
             $table->timestamps();
-
-            // $table->foreign('alert_id')->references('id')->on('alerts')->onDelete('cascade');
+            $table->foreign('alert_id')->references('id')->on('alerts')->onDelete('cascade');
         });
     }
 

@@ -18,7 +18,7 @@ return new class extends Migration
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->string('phone');
-            $table->string('type_notification');
+            $table->integer('type_notification');
             $table->boolean('first_access')->default(true);
             $table->rememberToken();
             $table->timestamps();
